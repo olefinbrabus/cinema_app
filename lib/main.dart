@@ -164,13 +164,13 @@ class _SeatingChartState extends State<SeatingChart> {
       body: GestureDetector(
         onScaleUpdate: (details) {
           setState(() {
-            _scaleFactor = details.scale.clamp(1.0, 2.0); // Ограничиваем масштаб от 1.0 до 2.0
+            _scaleFactor = details.scale.clamp(1.0, 2.0);
           });
         },
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical, // Вертикальная прокрутка
+          scrollDirection: Axis.vertical,
           child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal, // Горизонтальная прокрутка
+            scrollDirection: Axis.horizontal,
             child: Column(
               children: [
                 Container(
